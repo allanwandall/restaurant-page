@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --cardinal: #C33149;
+    --yellowgreen: #A8C256;
+    --wheat: #F3D9B1;
+    --lion: #C29979;
+    --auburn: #A22522;
+}
+
+body {
+    padding: 0%;
+    margin: 0px;
+    position: relative;
+}
+
+.header {
+    position: fixed;
+    z-index: 99;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    margin: 0px;
+    padding: 10px 30px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 150px 1fr 160px 270px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.logo-container {
+    display: block;
+    color: var(--auburn);
+    position: relative;
+    justify-self: end;
+
+    -webkit-user-select: none;
+    /* Safari */
+    -ms-user-select: none;
+    /* IE 10 and IE 11 */
+    user-select: none;
+    /* Standard syntax */
+}
+
+.logo-container .sub-hero {
+    font-family: "Raleway", sans-serif;
+    position: relative;
+    top: -10px;
+    font-weight: 300;
+    font-size: 18px;
+    text-align: right;
+    color: var(--cardinal);
+    margin: 0px;
+    letter-spacing: 5px;
+}
+
+.logo-container .hero {
+    font-family: 'Aclonica','Raleway', sans-serif;
+    text-align: right;
+    margin: 0px;
+    letter-spacing: 2px;
+}
+
+.header-options {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    justify-self: start;
+}
+
+.header-options li {
+    list-style-type: none;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    color: var(--cardinal);
+    padding: 10px;
+    border-radius: 7px;
+    background-color: white;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.header-options li:hover {
+    font-weight: 900;
+    background-color: var(--cardinal);
+    color: white;
+}
+
+.giftcard {
+    text-decoration: underline solid var(--cardinal);
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.giftcard:hover {
+    font-weight: 900;
+    text-decoration: underline overline solid var(--auburn);
+}
+
+#order-btn {
+    width: 170px;
+    border: none;
+    padding: 10px;
+    border-radius: 3px;
+    background-color: var(--cardinal);
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 22px;
+    font-weight: 800;
+    margin: auto;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+#order-btn:hover {
+    background-color: white;
+    color: var(--auburn);
+    border: 1px solid var(--auburn);
+}
+

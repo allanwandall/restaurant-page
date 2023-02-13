@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
+.home-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-picture-container {
+    width: 100%;
+    position: relative;
+    height: 1400px;
+    top: 0px;
+    left: 0px;
+    background-image: url(../assets/likemeat_pizza.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+    overflow: hidden;
+}
+
+.main-banner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    top: 600px;
+    left: -20px;
+    width: 110%;
+    max-height: 270px;
+    background-color: var(--cardinal);
+    transform: rotate(-4deg);
+    overflow: hidden;
+}
+
+.credit {
+    text-decoration: none;
+    color: var(--cardinal);
+    font-size: 18px;
+    font-weight: 700;
+    text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+}
+
+.main-picture-container a {
+    align-self: flex-start;
+    margin-bottom: 10px;
+    transform: rotate(-90deg);
+    position: absolute;
+    left: -110px;
+    bottom: 130px;
+}
+
+.o-clock-container {
+    position: relative;
+    top: 65px;
+    transform: rotate(4deg);
+    font-weight: 900;
+    font-family: 'Bungee', 'Raleway', sans-serif;
+    font-size: 60px;
+    -webkit-user-select: none;
+    /* Safari */
+    -ms-user-select: none;
+    /* IE 10 and IE 11 */
+    user-select: none;
+    /* Standard syntax */
+}
+
+.o-clock-container h1 {
+    margin: 0px;
+    padding: 0;
+}
+
+.o-clock-container h1:nth-child(1) {
+    color: white;
+}
+
+.o-clock-container h1:nth-child(2) {
+    position: relative;
+    top: -190px;
+    color: transparent;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: white;
+    letter-spacing: 26px;
+}
+
+.banner-button-container {
+    position: relative;
+    transform: rotate(4deg);
+    display: flex;
+    right: 140px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-button-container h3 {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 10px;
+
+}
+
+#banner-button {
+    width: 170px;
+    border: none;
+    padding: 15px;
+    border-radius: 3px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 22px;
+    font-weight: 800;
+    width: 220px;
+    margin: auto;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    background-color: var(--cardinal);
+    color: white;
+    border: 2px solid white;
+}
+
+#banner-button:hover {
+    background-color: white;
+    color: var(--cardinal);
+}
+
+.recommend-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.recommend-container div {
+    display: flex;
+    flex-direction: row;
+    margin: 50px 50px 25px;
+    gap: 40px;
+    align-items: center;
+}
+
+.recommend-container p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+    flex: 1;
+    padding: 80px;
+    line-height: 1.5;
+}
+
+.rec-img {
+    aspect-ratio: 1;
+    flex: 0.7;
+}
+
+.rec-img-1 {
+    position: relative;
+    background-image: url(../assets/brenan_unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+} 
+
+.rec-img-1 a{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
