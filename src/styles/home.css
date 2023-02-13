@@ -131,9 +131,10 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    position: relative;
 }
 
-.recommend-container div {
+.recommend-container > div {
     display: flex;
     flex-direction: row;
     margin: 50px 50px 25px;
@@ -143,27 +144,85 @@
 
 .recommend-container p {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 20px;
+    font-size: 18px;
     letter-spacing: 1px;
-    flex: 1;
-    padding: 80px;
     line-height: 1.5;
+    margin: 0;
+    text-indent: 40px;
 }
 
+.rec-text-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex: 1;
+    padding: 30px;
+    transition: all 0.5s ease;
+}
+
+.rec-text-container:hover {
+    transform: scale(1.05);
+}
+
+.rec-text-container h4{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+    font-size: 25px;
+    align-self: flex-end;
+    margin: 0;
+}
+
+.rec-text-container img {
+    filter: invert(20%) sepia(75%) saturate(2134%) hue-rotate(345deg) brightness(88%) contrast(90%);
+    width: 60px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.recommend-1 .rec-text-container img{
+    transform: rotate(10deg);
+}
+
+.recommend-2 .rec-text-container img {
+    transform: rotate(-10deg);
+}
+
+.recommend-2 {
+    position: relative;
+    top: -100px;
+}
+
+
 .rec-img {
+    position: relative;
+    flex: 0.5;
     aspect-ratio: 1;
-    flex: 0.7;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-position: center;
+    background-size: cover;
 }
 
 .rec-img-1 {
-    position: relative;
     background-image: url(../assets/brenan_unsplash.jpg);
-    background-position: center;
-    background-size: cover;
 } 
+
+.rec-img-2 {
+    background-image: url(../assets/klara_pizza.jpg);
+}
 
 .rec-img-1 a{
     position: absolute;
     bottom: 10px;
     left: 10px;
+}
+
+.rec-img-2 a {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
 }
